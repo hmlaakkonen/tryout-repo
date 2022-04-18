@@ -1,0 +1,53 @@
+/* styles for hover-bar */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    perspective: 900px;
+}
+
+.default-side {
+    background-color: white;
+    border: 10px solid purple;
+    color: purple;
+    transform: translateZ(75px);
+}
+
+.hover-bar {
+    display: inline-block; /* added style*/
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    transform: translateZ(-75px);
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    width: 450px;
+}
+
+.hover-bar.block-display {
+    display: block;
+}
+
+.hover-bar:hover {
+    transform: rotateX(-90deg) translateY(75px);
+}
+
+.hover-side {
+    color: white;
+    background-color: purple;
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.side {
+    align-items: center;
+    backface-visibility: hidden;
+    display: flex;
+    font-size: 3em;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}

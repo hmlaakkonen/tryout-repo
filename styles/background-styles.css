@@ -1,0 +1,16 @@
+/* https://github.com/WebDevSimplified/css-tutorials/blob/master/3D%20Flip%20Button/background_styles.css */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDF;
+}
